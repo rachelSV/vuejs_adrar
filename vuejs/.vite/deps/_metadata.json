@@ -1,0 +1,40 @@
+{
+  "hash": "fe4f4302",
+  "configHash": "840f5f47",
+  "lockfileHash": "d9b2c192",
+  "browserHash": "30b085ec",
+  "optimized": {
+    "bootstrap": {
+      "src": "../../node_modules/bootstrap/dist/js/bootstrap.esm.js",
+      "file": "bootstrap.js",
+      "fileHash": "1ad9ef6d",
+      "needsInterop": false
+    },
+    "easter-egg-collection": {
+      "src": "../../node_modules/easter-egg-collection/index.js",
+      "file": "easter-egg-collection.js",
+      "fileHash": "6dccdb1c",
+      "needsInterop": true
+    },
+    "vue": {
+      "src": "../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "3edb48cf",
+      "needsInterop": false
+    },
+    "vue-router": {
+      "src": "../../node_modules/vue-router/dist/vue-router.mjs",
+      "file": "vue-router.js",
+      "fileHash": "1169de4d",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-SJGJBLN5": {
+      "file": "chunk-SJGJBLN5.js"
+    },
+    "chunk-HKJ2B2AA": {
+      "file": "chunk-HKJ2B2AA.js"
+    }
+  }
+}

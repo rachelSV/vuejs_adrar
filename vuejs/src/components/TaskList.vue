@@ -5,7 +5,7 @@
     <p>Ajouter des Task</p>
     <input placeholder="Rajouter la Task" v-model="valeurInput">
     <button @click="addTask()">Ajouter</button>
-    <h3>Ma Liste :</h3>
+    <h4>Ma Liste :</h4>
     <ul>
       <li v-for="task in tasks" :key="task">
         {{ task }}
@@ -21,6 +21,9 @@
       <p>Objet : {{ objectExemple }}</p>
       <p>Fonction : {{ exercice2(objectExemple) }}</p>
      </div>
+
+     <!-- Exercice 3 nombre aléatoire -->
+     <h3>Message : {{ randomNumber() }}</h3>
   </div>
 </template>
 
@@ -51,7 +54,20 @@ export default defineComponent({
     // Fonction exercice 2 variables différents types
     exercice2(person) {
       return `Bonjour, ${person.name}`;
+    },
+    // V1 nombre aléatoire
+    randomNumber() {
+      return Math.random() > 0.5 ? "Message 1" : "Message 2"
     }
+    // V2 nombre aléatoire
+    // randomNumber(){
+    //  const number = Math.random();
+    //  if (number > 0.5) {
+    //    return "Message 1 avec IF";
+    //  } else {
+    //    return "Message 2 avec IF";
+    //  }
+    // }
   },
 });
 </script>
