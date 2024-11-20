@@ -1,10 +1,11 @@
 <template>
   <div class="compteur">
-    <h2>Exo 4 : compteur</h2>
+    <h2>Exo 4 : compteur + computed</h2>
     <section>
       <button @click="decrementer(10)">-</button>
       <p>le nombre : {{ nombre }}</p>
       <button @click="incrementer(44)">+</button>
+      <p>{{ bug }}</p>
   </section>
   </div>
 </template>
@@ -17,8 +18,25 @@ export default defineComponent({
   data() {
     return {
       nombre : 10,
+      userName: "",
     };
-    
+  },
+  computed: {
+    //V1
+    // bug() {
+    //   console.log("fonction blablabla")
+    //   return this.userName == "" ? "test" : "test 2"
+    // },
+    //V2
+    bug(){
+      console.log("fonction exécutée");
+      if (this.userName === "") {
+        return "test"
+      }
+      else {
+        return "un autre test"
+      }
+    }
   },
   methods: {
     incrementer(valeur) {

@@ -79,6 +79,11 @@ import { RouterLink } from 'vue-router'
                 </li>
               </ul>
             </li>
+            <li class="nav-item me-2 py-2">
+              <RouterLink to="/exercices" class="text-light text-decoration-none"
+                >Exercice</RouterLink
+              >
+            </li>
           </ul>
         </div>
       </div>

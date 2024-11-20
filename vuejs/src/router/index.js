@@ -10,6 +10,16 @@ const router = createRouter({
       component: HomeView,
     },
     {
+      path: '/exercices',
+      name: 'exercices',
+      component: () => import('../views/ExercicesView.vue')
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'NotFound',
+      component: () => import('../views/NotFound.vue')
+    },
+    {
       path: '/about',
       name: 'about',
       component: () => import('../views/AboutView.vue'),
@@ -39,6 +49,7 @@ const router = createRouter({
       name: 'system-component',
       component: () => import('../views/SystemComponent.vue'),
     },
+
   ],
 })
 

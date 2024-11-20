@@ -1,7 +1,7 @@
 <template>
   <div class="form">
     <h2>Exercice 4 - Formulaire avec évènements</h2>
-    <form v_on:submit.prevent>
+    <form v-on:submit.prevent>
       <input v-on:keyup="getKey" type="text"><br>
       <p>{{ keyValue }}</p>
       <input v-on:keyup.esc="getKey2" type="text"><br>
