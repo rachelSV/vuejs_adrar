@@ -10,6 +10,12 @@ const router = createRouter({
       component: HomeView,
     },
     {
+      path: '/tp-final',
+      name: 'tp-final',
+      component: () => import('../views/TpFinal.vue')
+    },
+    
+    {
       path: '/exercices',
       name: 'exercices',
       component: () => import('../views/ExercicesView.vue')

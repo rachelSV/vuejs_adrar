@@ -84,6 +84,11 @@ import { RouterLink } from 'vue-router'
                 >Exercice</RouterLink
               >
             </li>
+            <li class="nav-item me-2 py-2">
+              <RouterLink to="/tp-final" class="text-light text-decoration-none"
+                >TP Final</RouterLink
+              >
+            </li>
           </ul>
         </div>
       </div>
